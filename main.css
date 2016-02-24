@@ -1,0 +1,31 @@
+body {
+	margin: 0; max-width: 100%; min-width: 42em; font-size: 18pt; font-family: 'Ubuntu', sans-serif;
+}
+
+#title {
+	text-align: center; font-size: 5em;
+}
+
+#toc {
+	text-align: center; font-size: 2em;
+}
+
+#toc ul {
+	margin: 1em 0; padding: 0; list-style-type: none;
+}
+
+a {
+	text-decoration: none; color: inherit;
+}
+
+#toc a {
+	padding: 0.5em 1em; display: block; text-decoration: none; color: inherit; transition: ease-in-out 0.2s;
+}
+
+#toc a:hover {
+	background-color: #eee; transition: ease-in-out 0.2s;
+}
+
+p {
+	padding: 0.3em 8em; margin: 0; text-indent: 2em;
+}
