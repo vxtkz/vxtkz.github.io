@@ -108,18 +108,25 @@ body {
 	padding: 3px;
 }
 
-.pane {
+#pane {
 	width: 40%;
 	height: 40%;
+	padding: 10% 30% 50% 30%;
+	background-color: rgba(0, 0, 0, 0.1);
+	display: block;
+	z-index: 2;
 	position: fixed;
-	margin: 10% 30%;
+}
+
+#pane-content {
+	height: 100%;
 	display: block;
 	background-color: #009900;
 	border-radius: 8px;
 	padding: 3px;
 }
 
-.pane div {
+#pane-content div {
 	display: inline-block;
 	border-radius: 8px;
 	padding: 3px;
@@ -127,9 +134,13 @@ body {
 	margin: 0.2em 0.4em;
 }
 
-.pane div:hover {
+#pane-content div:hover {
 	background-color: #00CC00;
 	cursor: pointer;
+}
+
+#pane-cancel {
+	color: white;
 }
 
 @media only screen and (max-width: 500px) {}
