@@ -4,6 +4,10 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
+span {
+	display: inline-block;
+}
+
 #nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -34,7 +38,7 @@ body {
 	padding: 0 0.3em 0 1.5%;
 }
 
-#user-avatar img {
+img {
 	border-radius: 8px;
 }
 
@@ -91,9 +95,17 @@ body {
 
 .a-card {
 	margin: 1em 9% 0 0;
-	border: 1px solid black;
 	border-radius: 0.6em;
 	padding: 3px;
+	background-color: #00AA00;
+}
+
+.a-card span {
+	height: 34px;
+}
+
+.a-card span:nth-child(2) {
+	font-size: 1.7em;
 }
 
 #ad {
