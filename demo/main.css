@@ -1,13 +1,14 @@
 body {
 	margin: 0;
 	font-size: 14pt;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 #nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	overflow: hidden;
 	color: white;
 	background-color: #006600;
@@ -26,12 +27,7 @@ body {
 
 #nav ul li:nth-child(4) {
 	float: right;
-	padding: 0 1% 0 0.3em;
-}
-
-#nav ul li:nth-child(5) {
-	float: right;
-	padding: 0 0.3em;
+	padding: 0 1%;
 }
 
 #user-avatar {
@@ -56,22 +52,38 @@ body {
 	height: 42px;
 }
 
+
+
 #filter {
-	/* background-color: red; */
 	width: 25%;
-	float: left;
 	position: fixed;
+	margin: 1em 0 0 0;
 }
 
 .a-filter {
-	margin: 1em 5%;
-	border: 1px solid black;
-	border-radius: 0.6em;
-	padding: 3px;
+	margin: 0 5% 12px 5%;
+	cursor: pointer;
+}
+
+.a-filter span:nth-child(1) {
+	display: inline-block;
+	width: 2em;
+	background-color: #00BB00;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	padding: 0.1em 0.3em;
+}
+
+.a-filter span:nth-child(2) {
+	display: inline-block;
+	width: 5em;
+	background-color: #00EE00;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 0.1em 0.3em;
 }
 
 #card {
-	/* background-color: blue; */
 	width: 55%;
 	float: left;
 	margin: 0 0 0 25%;
@@ -85,7 +97,6 @@ body {
 }
 
 #ad {
-	/* background-color: yellow; */
 	width: 20%;
 	float: left;
 }
