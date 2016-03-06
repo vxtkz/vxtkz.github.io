@@ -67,7 +67,7 @@ body {
 
 .a-filter span:nth-child(1) {
 	display: inline-block;
-	width: 2em;
+	width: 2.5em;
 	background-color: #00BB00;
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
@@ -106,6 +106,30 @@ body {
 	border: 1px solid black;
 	border-radius: 0.6em;
 	padding: 3px;
+}
+
+.pane {
+	width: 40%;
+	height: 40%;
+	position: fixed;
+	margin: 10% 30%;
+	display: block;
+	background-color: #009900;
+	border-radius: 8px;
+	padding: 3px;
+}
+
+.pane div {
+	display: inline-block;
+	border-radius: 8px;
+	padding: 3px;
+	background-color: #00BB00;
+	margin: 0.2em 0.4em;
+}
+
+.pane div:hover {
+	background-color: #00CC00;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 500px) {}
