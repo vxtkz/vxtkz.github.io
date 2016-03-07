@@ -4,10 +4,6 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-span {
-	display: inline-block;
-}
-
 #nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -50,14 +46,6 @@ img {
 	padding: 0 0.3em;
 }
 
-#search-box {
-	border-radius: 8px;
-	background-color: #00BB00;
-	height: 42px;
-}
-
-
-
 #filter {
 	width: 25%;
 	position: fixed;
@@ -65,26 +53,28 @@ img {
 }
 
 .a-filter {
-	margin: 0 5% 12px 5%;
-	cursor: pointer;
+	margin: 1em 2em;
 }
 
-.a-filter span:nth-child(1) {
-	display: inline-block;
-	width: 2.5em;
+.filter-name {
 	background-color: #00BB00;
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
-	padding: 0.1em 0.3em;
+	font-size: 1.2em;
+	border-radius: 8px;
+	display: inline-block;
+	padding: 0.2em 0.3em;
+	margin: 0 0 0.1em 0;
 }
 
-.a-filter span:nth-child(2) {
-	display: inline-block;
-	width: 5em;
+.filter-item {
 	background-color: #00EE00;
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
-	padding: 0.1em 0.3em;
+	display: inline-block;
+	padding: 3px;
+	border-radius: 8px;
+	margin: 0.2em 0 0 0;
+}
+
+.filter-item:hover {
+	cursor: pointer;
 }
 
 #card {
@@ -100,14 +90,6 @@ img {
 	background-color: #00AA00;
 }
 
-.a-card span {
-	height: 34px;
-}
-
-.a-card span:nth-child(2) {
-	font-size: 1.7em;
-}
-
 #ad {
 	width: 20%;
 	float: left;
@@ -119,40 +101,3 @@ img {
 	border-radius: 0.6em;
 	padding: 3px;
 }
-
-#pane {
-	width: 40%;
-	height: 40%;
-	padding: 10% 30% 50% 30%;
-	background-color: rgba(0, 0, 0, 0.1);
-	display: block;
-	z-index: 2;
-	position: fixed;
-}
-
-#pane-content {
-	height: 100%;
-	display: block;
-	background-color: #009900;
-	border-radius: 8px;
-	padding: 3px;
-}
-
-#pane-content div {
-	display: inline-block;
-	border-radius: 8px;
-	padding: 3px;
-	background-color: #00BB00;
-	margin: 0.2em 0.4em;
-}
-
-#pane-content div:hover {
-	background-color: #00CC00;
-	cursor: pointer;
-}
-
-#pane-cancel {
-	color: white;
-}
-
-@media only screen and (max-width: 500px) {}

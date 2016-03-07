@@ -24,32 +24,38 @@
 			</li>
 		</ul>
 	</div>
+
 	<div id="filter">
-		<div class="a-filter" id="from-filter" onclick="chooseFrom()">
-			<span>from</span><span id="from-result">&nbsp</span>
+		<div class="a-filter" id="from-filter">
+			<div class="filter-name">from</div><br>
+			<div class="filter-item" onclick="light('from', '1')" id="from-Chicago">Chicago</div>
+			<div class="filter-item" onclick="light('from', '2')">New York</div>
+			<div class="filter-item" onclick="light('from', '3')">Shanghai</div>
+			<div class="filter-item" onclick="light('from', '4')">Hangzhou</div>
 		</div>
-		<div class="a-filter" id="to-filter" onclick="chooseTo()">
-			<span>to</span><span id="to-result">&nbsp</span>
+		<div class="a-filter" id="to-filter">
+			<div class="filter-name">to</div><br />
+			<div class="filter-item" onclick="light('to', '1')">Chicago</div>
+			<div class="filter-item" onclick="light('to', '2')">New York</div>
+			<div class="filter-item" onclick="light('to', '3')">Shanghai</div>
+			<div class="filter-item" onclick="light('to', '4')">Hangzhou</div>
 		</div>
-		<div class="a-filter" id="date-filter" onclick="chooseDate()">
-			<span>date</span><span id="date-result">&nbsp</span>
+		<div class="a-filter" id="time-filter">
+			<div class="filter-name">time</div><br />
+			<div class="filter-item" onclick="light('time', '1')">2016-04</div>
+			<div class="filter-item" onclick="light('time', '2')">2016-05</div>
+			<div class="filter-item" onclick="light('time', '3')">2016-06</div>
+			<div class="filter-item" onclick="light('time', '4')">2016-07</div>
+		</div>
+		<div class="a-filter" id="reset-filter">
+			<div class="filter-item" onclick="resetFilter()">reset all</div>
 		</div>
 	</div>
+
 	<div id="card">
-		<div class="a-card">
-			<div>
-				<span><img src="test-avatar.png" height="34px"></span><span>John Doe</span>
-			</div>
-			<div>
-				<p>a test message.</p>
-			</div>
-			<div>
-				some details.
-			</div>
-		</div>
+		<div class="a-card"></div>
 	</div>
 	<div id="ad"></div>
-<script type="text/javascript" src="vxtkz.js"></script>
-<script type="text/javascript" src="choose.js"></script>
+<script type="text/javascript" src="filter.js"></script>
 </body>
 </html>
