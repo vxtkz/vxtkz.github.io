@@ -70,12 +70,11 @@ form input {
 	background: none;
 }
 
-.forget-pwd {
-	padding: 0 1em;
-	padding: 1em;
+.login-extra {
+	padding: 1em 1em 0 1em;
 }
 
-.forget-pwd a {
+.login-extra a {
 	text-decoration: none;
 	color: inherit;
 }
@@ -92,7 +91,7 @@ form input {
 .show-post {
 	width: 520px;
 	height: 120px;
-	background-color: red;
+	background-color: #00EE00;
 	margin: 20px;
 	border-radius: 8px;
 }
