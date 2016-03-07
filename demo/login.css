@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	margin: 4em auto;
+	width: 800px;
+	height: 500px;
+}
+
+.left-pane {
+	float: left;
+	width: 30%;
+	height: 500px;
+}
+
+.right-pane {
+	margin: 0 0 0 30%;
+	width: 560px;
+	height: 500px;
+}
+
+.user-avatar {
+	text-align: center;
+}
+
+.user-avatar img {
+	height: 80px;
+	margin: 0.5em;
+	border-radius: 8px;
+}
+
+form {
+	margin: 0.5em 1em;
+	border-radius: 8px;
+	background-color: #00EE00;
+}
+
+input:nth-child(1) {
+	padding: 5px 0 5px 55px;
+	background: url(50px.png);
+	background-repeat: no-repeat;
+	border-top-left-radius: 8px;
+}
+
+input:nth-child(2) {
+	padding: 5px 0 5px 55px;
+	background: url(50px.png);
+	background-repeat: no-repeat;
+}
+
+input:nth-child(3) {
+	background-color: #009900;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	height: 50px;
+	cursor: pointer;
+}
+
+form input {
+	float: none;
+	display: block;
+	border: none;
+	box-shadow: none;
+	width: 100%;
+	font-size: 1.5em;
+	height: 40px;
+	background: none;
+}
+
+.forget-pwd {
+	padding: 0 1em;
+	padding: 1em;
+}
+
+.forget-pwd a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.show-pic {
+	width: 560px;
+	height: 340px;
+}
+
+.show-pic img {
+	border-radius: 8px;
+}
+
+.show-post {
+	width: 520px;
+	height: 120px;
+	background-color: red;
+	margin: 20px;
+	border-radius: 8px;
+}
