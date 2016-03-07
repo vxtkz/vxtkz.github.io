@@ -31,3 +31,14 @@ function resetFilter() {
 function sendQuery(query, value) {
 	;
 }
+
+var win = window,
+	docEl = document.documentElement,
+	$filter = document.getElementById('filter');
+	$card = document.getElementById('card');
+
+win.onscroll = function(){
+	var sTop = (this.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
+	$filter.style.position = sTop > 68 ? "fixed":"relative";
+	$card.style.marginLeft = sTop > 68 ? "25%":"0";
+};
