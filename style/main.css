@@ -1,35 +1,45 @@
 body {
-	margin: 0; min-width: 27em; font-size: 18pt; font-family: 'Ubuntu', sans-serif;
+	margin: 0; font-size: 14pt; font-family: 'Ubuntu', sans-serif; background-color: white;
 }
 
-#title {
-	text-align: center; font-size: 3em;
+footer {
+	text-align: center; font-size: 0.8em; margin-top: 2em;
 }
 
-#title a {
-	color: black;
-}
-
-#toc {
+nav {
 	text-align: center; font-size: 1.5em;
 }
 
-#toc ul {
-	margin: 1em 0; padding: 0; list-style-type: none;
+nav ul {
+	list-style-type: none; margin: 0; padding: 0;
+}
+
+nav button {
+	border: none; background-color: white; font-family: inherit; font-size: inherit; transition: ease-in-out 0.2s; width: 100%; padding: 0.5em 0;
+}
+
+nav button:hover {
+	background-color: #EEE; transition: ease-in-out 0.2s;
+}
+
+h1 {
+	margin: 0; text-align: center; font-size: 2.5em; padding: 0.2em;
+}
+
+h1 a {
+	color: inherit; cursor: default;
+}
+
+h2 {
+	margin: 0; font-size: 1.5em;
+}
+
+article {
+	width: 80%;
+	margin: auto;
+	padding: 1em 0.5em;
 }
 
 a {
 	text-decoration: none; color: green;
-}
-
-#toc a {
-	padding: 0.5em 1em; display: block; text-decoration: none; color: inherit; transition: ease-in-out 0.2s;
-}
-
-#toc a:hover {
-	background-color: #EEE; transition: ease-in-out 0.2s;
-}
-
-p {
-	padding: 0.3em 2em; margin: 0; text-indent: 2em;
 }

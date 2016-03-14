@@ -9,15 +9,20 @@
 </head>
 
 <body>
-	<div id="title"><a href="index.html">vxtkz</a></div>
-	<div id="toc">
+	<h1><a href="index.html">vxtkz</a></h1>
+	<nav>
 		<ul>
-			<li><a href="page/about.html">about</a></li>
-			<li><a href="page/project.html">project</a></li>
-			<li><a href="page/article.html">article</a></li>
-			<li><a href="page/list.html">list</a></li>
+			<li><button onclick="showTOC('project')">project</button></li>
+			<li><div id="project-toc"></div></li>
+			<li><button onclick="showTOC('article')">article</button></li>
+			<li><div id="article-toc"></div></li>
+			<li><button onclick="showTOC('about')">about</button></li>
+			<li><div id="about-toc"></div></li>
 		</ul>
-	</div>
+	</nav>
+	<footer>
+		vxtkz &copy 2016
+	</footer>
 </body>
-
+<script type="text/javascript" src="src/base.js"></script>
 </html>
